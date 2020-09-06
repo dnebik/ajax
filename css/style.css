@@ -1,0 +1,23 @@
+.body {
+    margin: 15px;
+    font-size: 20px;
+    background-color: #6c757d;
+}
+
+.select {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.card {
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+.card-body .lead {
+    font-size: 15px !important;
+}
+
+.null-res {
+    padding: 25px 0;
+}
