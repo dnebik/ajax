@@ -55,7 +55,7 @@ $weights = $weights->fetchAll(PDO::FETCH_ASSOC);
                 <?
                 foreach ($cats as $cat) {
                 ?>
-                <option <?= $_SESSION['cat'] == $cat["cat"] ? "selected" : "" ?> value="<?=$cat["cat"]?>"><?=$cat["cat"]?></option>
+                <option <?= ($_SESSION['cat'] == $cat["cat"]) ? "selected" : "" ?> value="<?=$cat["cat"]?>"><?=$cat["cat"]?></option>
                 <? } ?>
             </select>
 
@@ -64,7 +64,7 @@ $weights = $weights->fetchAll(PDO::FETCH_ASSOC);
                 <?
                 foreach ($colors as $color) {
                     ?>
-                    <option <?= $_SESSION['color'] == $color["color"] ? "selected" : "" ?> value="<?=$color["color"]?>"><?=$color["color"]?></option>
+                    <option <?= ($_SESSION['color'] == $color["color"]) ? "selected" : "" ?> value="<?=$color["color"]?>"><?=$color["color"]?></option>
                 <? } ?>
             </select>
 
@@ -73,7 +73,7 @@ $weights = $weights->fetchAll(PDO::FETCH_ASSOC);
                 <?
                 foreach ($weights as $weight) {
                     ?>
-                    <option <?= ($_SESSION['weights'] == $weight["weight"]) ? "selected" : "" ?> value="<?=$weight["weight"]?>"><?=$weight["weight"]?></option>
+                    <option <?= ($_SESSION['weight'] == $weight["weight"]) ? "selected" : "" ?> value="<?=$weight["weight"]?>"><?=$weight["weight"]?></option>
                 <? } ?>
             </select>
         </div>
